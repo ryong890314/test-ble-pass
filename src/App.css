@@ -86,6 +86,17 @@ ul {
 .SubMenu .nav_li a {
   color: #000000;
 }
+.SubMenu .nav_li a.current #text {
+  background-color: #000;
+}
+.SubMenu .nav_li a.current:before {
+  content: "";
+  display: block;
+  margin: -10px -20px -27px;
+  padding: 10px 0 27px;
+  background: #D5E9F7;
+  width: 200px;
+}
 
 .Main {
   border-radius: 0 10px 10px 0;
@@ -190,6 +201,9 @@ ul {
   height: calc(100vh - 223px);
   overflow: auto;
   overflow-y:scroll;
+}
+.MainPage.sub {
+  height: calc(100vh - 133px);
 }
 
 .layout_1 {

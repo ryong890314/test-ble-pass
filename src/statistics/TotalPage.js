@@ -1,6 +1,6 @@
 import { Line, Bar } from 'react-chartjs-2';
 
-function DayPage() {
+function Total() {
   return (
     <>
     <div className="layout_1">
@@ -125,4 +125,5 @@ const visitTimeData = {
   ]
 };
 
-export default DayPage;
+
+export default Total;

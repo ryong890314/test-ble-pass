@@ -65,17 +65,17 @@ function SubHeader() {
   );
 }
 
-function tick() {
-  const date = new Date();
-  const element = (
-    <>
-    <p className="date">{ date.getFullYear() + "-" + ("00" + (date.getMonth()+1)).slice(-2) + "-" + ("00" + date.getDate()).slice(-2)}</p>
-    <span className="time">{date.toLocaleTimeString('en-GB')}</span>
-    </>
-  );
-  ReactDOM.render(element, document.getElementById('timer'));
-}
+// function tick() {
+//   const date = new Date();
+//   const element = (
+//     <>
+//     <p className="date">{ date.getFullYear() + "-" + ("00" + (date.getMonth()+1)).slice(-2) + "-" + ("00" + date.getDate()).slice(-2)}</p>
+//     <span className="time">{date.toLocaleTimeString('en-GB')}</span>
+//     </>
+//   );
+//   ReactDOM.render(element, document.getElementById('timer'));
+// }
 
-setInterval(tick, 1000);
+// setInterval(tick, 1000);
 
 export default SubHeader;
