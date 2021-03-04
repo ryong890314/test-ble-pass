@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route, Switch, Redirect, NavLink, BrowserRouter as Router } from "react-router-dom";
+import { Route, Switch, Redirect, NavLink, BrowserRouter as Router } from "react-router-dom";
 import './App.css';
 import Dashboard from './menu/Dashboard';
 import Statistics from './menu/Statistics';

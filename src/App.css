@@ -32,6 +32,7 @@ ul {
   border-radius: 10px 0 0 10px;
   background-color: #ffffff;
   max-width: 150px;
+  min-width: 150px;
   list-style:none;
 }
 .Menu ul {
@@ -119,7 +120,7 @@ ul {
 }
 .Header .option {
   color: #a6a6a6;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   margin-left: auto;
   padding: 40px 20px 25px;
@@ -213,9 +214,15 @@ ul {
   margin: 10px;
   padding: 20px;
 }
+
+.layout_2 .title,
 .layout_1 .title {
   font-size: 14px;
   font-weight: 800;
+  padding-bottom: 15px;
+}
+.layout_1 .sub_title {
+  font-size: 12px;
   padding-bottom: 15px;
 }
 .layout_1 table {
@@ -238,4 +245,36 @@ ul {
 }
 .layout_1 td {
   font-size: 14px;
+}
+
+.layout_header {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding-bottom: 15px;
+}
+.layout_header .visit_ul {
+  display: inline-flex;
+  width: 100%;
+}
+.layout_header .visit_li {
+  width: 120px;
+}
+.layout_header .stat_title {
+  font-size: 12px;
+  color: #a6a6a6;
+}
+.layout_header .stat_text {
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.layout_1 .part_ul {
+  /* display: inline-flex; */
+  /* width: 100%; */
+}
+.layout_1 .part_li {
+  /* width: 400px; */
 }

@@ -1,4 +1,4 @@
-import { Link, Route, Switch, BrowserRouter as Router, useParams,
+import { Route, Switch, 
   useRouteMatch, NavLink, Redirect } from "react-router-dom";
 
 import TotalPage from './TotalPage';

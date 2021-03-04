@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
-import { Link, Route, Switch, BrowserRouter as Router, useParams,
+import React, { useEffect } from 'react';
+import { Route, Switch,
   useRouteMatch, NavLink, Redirect } from "react-router-dom";
 
 import DayPage from './DayPage';
@@ -11,6 +12,22 @@ function SubHeader() {
   const activeStyle = {
     color: '#2B90D9',
   };
+
+  useEffect(() => {
+    function tick() {
+      const date = new Date();
+      const element = (
+        <>
+        <p className="date">{ date.getFullYear() + "-" + ("00" + (date.getMonth()+1)).slice(-2) + "-" + ("00" + date.getDate()).slice(-2)}</p>
+        <span className="time">{date.toLocaleTimeString('en-GB')}</span>
+        </>
+      );
+      ReactDOM.render(element, document.getElementById('timer'));
+    }
+
+    let id = setInterval(tick, 1000);
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <>
@@ -64,18 +81,5 @@ function SubHeader() {
     </>
   );
 }
-
-// function tick() {
-//   const date = new Date();
-//   const element = (
-//     <>
-//     <p className="date">{ date.getFullYear() + "-" + ("00" + (date.getMonth()+1)).slice(-2) + "-" + ("00" + date.getDate()).slice(-2)}</p>
-//     <span className="time">{date.toLocaleTimeString('en-GB')}</span>
-//     </>
-//   );
-//   ReactDOM.render(element, document.getElementById('timer'));
-// }
-
-// setInterval(tick, 1000);
 
 export default SubHeader;
