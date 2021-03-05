@@ -51,10 +51,9 @@ function Total() {
     />
     </div>
 
-    <div className="layout_1">
-      <p className="title">방문고객 분석</p>
-      <ul className="part_ul">
-        <li className="part_li">
+    <div className="layout_2 top">
+      <p className="title">방문고객 분석 (일간)</p>
+      <div className="flex_container">
           <Doughnut
             options={{
               legend: {
@@ -64,20 +63,100 @@ function Total() {
               }
             }}
             data={visitData}
-            height={50}
+            height={100}
           />
-        </li>
-        <li className="part_li">
-          <p className="stat_title">신규고객</p>
-          <p className="stat_text">150(60%)</p>
-          <p className="stat_title">재방문고객</p>
-          <p className="stat_text">100(40%)</p>
-        </li>
-      </ul>
+        <div className="flex_box">
+          <div className="flex_item new">
+            <p className="stat_title">신규고객</p>
+            <p className="stat_text">150 (60%)</p>
+          </div>
+          <div className="flex_item re">
+            <p className="stat_title">재방문고객</p>
+            <p className="stat_text">100 (40%)</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div className="layout_1">
+    <div className="layout_2 left top">
+      <p className="title">방문고객 분석 (월간)</p>
+      <div className="flex_container">
+          <Doughnut
+            options={{
+              legend: {
+                display: true,
+                position: "right",
+                reverse: true,
+              }
+            }}
+            data={visitData}
+            height={100}
+          />
+        <div className="flex_box">
+          <div className="flex_item new">
+            <p className="stat_title">신규고객</p>
+            <p className="stat_text">4,940 (65%)</p>
+          </div>
+          <div className="flex_item re">
+            <p className="stat_title">재방문고객</p>
+            <p className="stat_text">2,660 (35%)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="layout_2 top">
+      <p className="title">방문고객 분석 (연간)</p>
+      <div className="flex_container">
+          <Doughnut
+            options={{
+              legend: {
+                display: true,
+                position: "right",
+                reverse: true,
+              }
+            }}
+            data={visitData}
+            height={100}
+          />
+        <div className="flex_box">
+          <div className="flex_item new">
+            <p className="stat_title">신규고객</p>
+            <p className="stat_text">65,000 (65%)</p>
+          </div>
+          <div className="flex_item re">
+            <p className="stat_title">재방문고객</p>
+            <p className="stat_text">35,000 (35%)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="layout_2 left top">
       <p className="title">이탈고객 분석</p>
+      <div className="flex_container">
+          <Doughnut
+            options={{
+              legend: {
+                display: true,
+                position: "right",
+                reverse: true,
+              }
+            }}
+            data={visitOutData}
+            height={100}
+          />
+        <div className="flex_box">
+          <div className="flex_item re">
+            <p className="stat_title">재방문고객</p>
+            <p className="stat_text">4,200 (70%)</p>
+          </div>
+          <div className="flex_item out">
+            <p className="stat_title">이탈고객</p>
+            <p className="stat_text">1,800 (30%)</p>
+          </div>
+        </div>
+      </div>
     </div>
 
   </>
@@ -90,6 +169,17 @@ const visitData = {
   datasets: [
     {
       backgroundColor: ["#2B90D9", "#D5E9F7"],
+			borderColor: '#fff',
+      data: [65, 35]
+    }
+  ]
+};
+
+const visitOutData = {
+  labels: ['재방문', '이탈'],
+  datasets: [
+    {
+      backgroundColor: ["#D5E9F7", "#eaeaea"],
 			borderColor: '#fff',
       data: [65, 35]
     }

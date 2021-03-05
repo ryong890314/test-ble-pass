@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router  basename="/test-ble-pass">
       <div className="Container">
 
         <div className="Menu">

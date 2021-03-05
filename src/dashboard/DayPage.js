@@ -29,7 +29,7 @@ function DayPage() {
           }
         }}
         data={visitData}
-        height={100}
+        height={80}
       />
     </div>
 
