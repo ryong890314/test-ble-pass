@@ -1,6 +1,6 @@
 import { Doughnut, Bar, } from 'react-chartjs-2';
 
-function Total() {
+function TotalPage() {
   return (
     <>
     <div className="layout_1">
@@ -199,4 +199,4 @@ const visitTimeData = {
 };
 
 
-export default Total;
+export default TotalPage;

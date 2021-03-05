@@ -3,7 +3,9 @@ import { Route, Switch, Redirect, NavLink, BrowserRouter as Router } from "react
 import './App.css';
 import Dashboard from './menu/Dashboard';
 import Statistics from './menu/Statistics';
-// import SubMenu from './dashboard/SubMenu';
+import Customer from './menu/Customer';
+import Marketing from './menu/Marketing';
+import Setting from './menu/Setting';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTable, faChartPie, faUser, faCog, faBullhorn } from '@fortawesome/free-solid-svg-icons'
@@ -64,13 +66,13 @@ function App() {
             <Statistics />
           </Route>
           <Route path="/customer">
-            <Statistics />
+            <Customer />
           </Route>
           <Route path="/marketing">
-            <Dashboard />
+            <Marketing />
           </Route>
           <Route path="/setting">
-            <Statistics />
+            <Setting />
           </Route>
         </Switch>
         
