@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/test-ble-pass/static/css/main.b75cff8d.chunk.css",
-    "main.js": "/test-ble-pass/static/js/main.7c427a01.chunk.js",
-    "main.js.map": "/test-ble-pass/static/js/main.7c427a01.chunk.js.map",
+    "main.css": "/test-ble-pass/static/css/main.1e483323.chunk.css",
+    "main.js": "/test-ble-pass/static/js/main.a7a48725.chunk.js",
+    "main.js.map": "/test-ble-pass/static/js/main.a7a48725.chunk.js.map",
     "runtime-main.js": "/test-ble-pass/static/js/runtime-main.90123c79.js",
     "runtime-main.js.map": "/test-ble-pass/static/js/runtime-main.90123c79.js.map",
-    "static/js/2.287274cd.chunk.js": "/test-ble-pass/static/js/2.287274cd.chunk.js",
-    "static/js/2.287274cd.chunk.js.map": "/test-ble-pass/static/js/2.287274cd.chunk.js.map",
+    "static/js/2.03548725.chunk.js": "/test-ble-pass/static/js/2.03548725.chunk.js",
+    "static/js/2.03548725.chunk.js.map": "/test-ble-pass/static/js/2.03548725.chunk.js.map",
     "static/js/3.12ae1cc4.chunk.js": "/test-ble-pass/static/js/3.12ae1cc4.chunk.js",
     "static/js/3.12ae1cc4.chunk.js.map": "/test-ble-pass/static/js/3.12ae1cc4.chunk.js.map",
     "index.html": "/test-ble-pass/index.html",
-    "static/css/main.b75cff8d.chunk.css.map": "/test-ble-pass/static/css/main.b75cff8d.chunk.css.map",
-    "static/js/2.287274cd.chunk.js.LICENSE.txt": "/test-ble-pass/static/js/2.287274cd.chunk.js.LICENSE.txt"
+    "static/css/main.1e483323.chunk.css.map": "/test-ble-pass/static/css/main.1e483323.chunk.css.map",
+    "static/js/2.03548725.chunk.js.LICENSE.txt": "/test-ble-pass/static/js/2.03548725.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.90123c79.js",
-    "static/js/2.287274cd.chunk.js",
-    "static/css/main.b75cff8d.chunk.css",
-    "static/js/main.7c427a01.chunk.js"
+    "static/js/2.03548725.chunk.js",
+    "static/css/main.1e483323.chunk.css",
+    "static/js/main.a7a48725.chunk.js"
   ]
 }
