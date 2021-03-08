@@ -1,11 +1,16 @@
-import { Line, Bar } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
+import { useParams } from "react-router-dom";
 
 function Detail() {
+
+  let { id } = useParams();
 
   return (
     <>
       <div className="Detail">
         <div className="MainPage initial">
+
+        <h3>ID: {id}</h3>
 
           <div className="layout_1">
             <p className="title">고객정보</p>

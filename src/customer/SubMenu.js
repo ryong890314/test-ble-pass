@@ -3,8 +3,6 @@ import { Route, Switch,
 
 import TotalPage from './TotalPage';
 import Header from './Header';
-import List from './List';
-import Detail from './Detail';
 
 function SubMenu() {
 
@@ -35,9 +33,9 @@ function SubMenu() {
 
       <div className="MainPage sub flex_container">
         
-        <List />
+        {/* <List />
 
-        <Detail />
+        <Detail /> */}
 
         <Switch>
           <Route exact path={path}>
