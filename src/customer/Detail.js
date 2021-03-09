@@ -5,12 +5,17 @@ function Detail() {
 
   let { id } = useParams();
 
+  let customerInfo = customerList.customers.filter(e => e.id === parseInt(id));
+  // console.log(id);
+  // console.log(customerList.customers.filter(e => e.id === parseInt(id)));
+
   return (
     <>
       <div className="Detail">
         <div className="MainPage initial">
 
         <h3>ID: {id}</h3>
+        <p>{customerInfo[0].name}</p>
 
           <div className="layout_1">
             <p className="title">고객정보</p>
@@ -110,5 +115,12 @@ const visitTimeData = {
     }
   ]
 };
+
+const customerList = {
+  "customers" : [
+    {"id": 55, "name" : "홍*동", "phone_number" : "010-****-4567"},
+    {"id": 59, "name" : "김*훈", "phone_number" : "010-****-8484"},
+  ]
+}
 
 export default Detail;

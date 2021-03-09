@@ -1,10 +1,9 @@
-import { Route, Switch, Link,
-  useRouteMatch, NavLink, Redirect } from "react-router-dom";
+import { Route, Switch, useRouteMatch, NavLink } from "react-router-dom";
   import Detail from './Detail';
 
 function List() {
 
-  let { path, url } = useRouteMatch();  
+  let { url } = useRouteMatch();  
   
   return (
     <>
@@ -14,10 +13,10 @@ function List() {
           return (
             <>
             <div className="user_list">
-              <Link to={`${url}/${customer.id}`}>
+              <NavLink to={`${url}/${customer.id}`} activeClassName="current">
                 <p className="name">{customer.name}</p>
                 <p className="phone_number">{customer.phone_number}</p>
-              </Link>
+              </NavLink>
             </div>
            </>
           );
@@ -26,6 +25,7 @@ function List() {
       </div>
       
        <Switch>
+         {/* <Redirect to={`${url}/:id`} /> */}
           <Route path={`${url}/:id`} children={<Detail />} />
         </Switch>
       
@@ -36,8 +36,8 @@ function List() {
 
 const customerList = {
   "customers" : [
-    {"id": 1, "name" : "홍*동", "phone_number" : "010-****-4567"},
-    {"id": 2, "name" : "김*훈", "phone_number" : "010-****-8484"},
+    {"id": 55, "name" : "홍*동", "phone_number" : "010-****-4567"},
+    {"id": 59, "name" : "김*훈", "phone_number" : "010-****-8484"},
   ]
 }
 

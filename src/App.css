@@ -350,14 +350,16 @@ ul {
   overflow: auto;
   overflow-y:scroll;
 }
-
-.List .user_list {
+.List .user_list a {
+  text-decoration: none;
+  display: block;
   padding: 10px 20px;
 }
-.List .user_list.select {
+.List .user_list .current {
   background-color:#eaeaea;
 }
 .List .user_list .name{
+  color: #000;
   font-size: 18px;
   font-weight: 800;
 }
