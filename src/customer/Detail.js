@@ -1,24 +1,31 @@
 import { Bar } from 'react-chartjs-2';
 import { useParams } from "react-router-dom";
+import profile_img from '../images/profile_img.png';
 
 function Detail() {
 
   let { id } = useParams();
 
   let customerInfo = customerList.customers.filter(e => e.id === parseInt(id));
-  // console.log(id);
-  // console.log(customerList.customers.filter(e => e.id === parseInt(id)));
 
   return (
     <>
       <div className="Detail">
         <div className="MainPage initial">
 
-        <h3>ID: {id}</h3>
-        <p>{customerInfo[0].name}</p>
+        {/* <h3>ID: {id}</h3>
+        <p>{customerInfo[0].name}</p> */}
 
           <div className="layout_1">
             <p className="title">고객정보</p>
+            <div className="customer_info">
+              <img className="profile_img" src={profile_img} alt="profile_img" />
+              <div className="profile_info">
+                <p className="name">{customerInfo[0].name}</p>
+                <p className="phone_number">{customerInfo[0].phone_number}</p>
+              </div>
+            </div>
+            
             <div className="layout_header bottom">
               <ul className="visit_ul">
                 <li className="visit_li">
@@ -118,8 +125,14 @@ const visitTimeData = {
 
 const customerList = {
   "customers" : [
-    {"id": 55, "name" : "홍*동", "phone_number" : "010-****-4567"},
-    {"id": 59, "name" : "김*훈", "phone_number" : "010-****-8484"},
+    {"id": 1, "name" : "김*훈", "phone_number" : "010-****-1234"},
+    {"id": 2, "name" : "박*수", "phone_number" : "010-****-4567"},
+    {"id": 3, "name" : "이*훈", "phone_number" : "010-****-8901"},
+    {"id": 4, "name" : "박*지", "phone_number" : "010-****-2345"},
+    {"id": 5, "name" : "정*훈", "phone_number" : "010-****-6789"},
+    {"id": 6, "name" : "김*진", "phone_number" : "010-****-0123"},
+    {"id": 7, "name" : "김*호", "phone_number" : "010-****-4567"},
+    {"id": 8, "name" : "최*지", "phone_number" : "010-****-8901"},
   ]
 }
 

@@ -1,7 +1,9 @@
+import List from './List';
 
 function TotalPage() {
   return (
     <>
+    <List />
   </>
   );
   

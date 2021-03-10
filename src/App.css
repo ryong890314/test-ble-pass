@@ -241,6 +241,28 @@ ul {
   font-size: 12px;
   padding-bottom: 15px;
 }
+.layout_1 .customer_info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.layout_1 .customer_info .profile_img {
+  display: inline-flex;
+}
+.layout_1 .customer_info .profile_info {
+  flex-direction: column;
+  margin-left: 10px;
+}
+.layout_1 .customer_info .name{
+  color: #000;
+  margin-top: 2px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.layout_1 .customer_info .phone_number{
+  font-size: 14px;
+  color: #a6a6a6;
+}
 .layout_1 table {
   width: 100%;
   border: none;
@@ -350,22 +372,79 @@ ul {
   overflow: auto;
   overflow-y:scroll;
 }
+.List.card{
+  background-color: #fafafa;
+  height: 100%;
+  width: 400px;
+  overflow: auto;
+  overflow-y:scroll;
+}
 .List .user_list a {
   text-decoration: none;
-  display: block;
+  align-items: center;
+  display: flex;
   padding: 10px 20px;
 }
 .List .user_list .current {
   background-color:#eaeaea;
 }
+.List .user_list .profile_img {
+  display: inline-flex;
+}
+.List .user_list .profile_info {
+  flex-direction: column;
+  margin-left: 10px;
+}
 .List .user_list .name{
   color: #000;
+  margin-top: 2px;
   font-size: 18px;
   font-weight: 800;
 }
 .List .user_list .phone_number{
   font-size: 14px;
   color: #a6a6a6;
+}
+.List .marketing_list a {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  color: #000000;
+  box-sizing: border-box;
+  text-decoration: none;
+  flex-direction: column;
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+}
+.List .marketing_list a.current {
+  background-color: #eaeaea;
+}
+
+.List .marketing_list .marketing_header {
+  padding-bottom: 15px;
+}
+.List .marketing_list .marketing_header .stat_title {
+  font-size: 14px;
+  color: #a6a6a6;
+}
+.List .marketing_list .marketing_header .stat_text {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.List .marketing_list .marketing_info .stat {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+.List .marketing_list .marketing_info .stat_title {
+  width: 100px;
+  font-size: 14px;
+  color: #a6a6a6;
+}
+.List .marketing_list .marketing_info .stat_text {
+  width: 100px;
+  font-weight: 800;
 }
 .Detail {
   display: flex;

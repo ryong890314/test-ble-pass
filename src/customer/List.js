@@ -1,5 +1,6 @@
 import { Route, Switch, useRouteMatch, NavLink } from "react-router-dom";
   import Detail from './Detail';
+  import profile_img from '../images/profile_img.png';
 
 function List() {
 
@@ -14,8 +15,11 @@ function List() {
             <>
             <div className="user_list">
               <NavLink to={`${url}/${customer.id}`} activeClassName="current">
-                <p className="name">{customer.name}</p>
-                <p className="phone_number">{customer.phone_number}</p>
+                <img className="profile_img" src={profile_img} alt="profile_img" />
+                <div className="profile_info">
+                  <p className="name">{customer.name}</p>
+                  <p className="phone_number">{customer.phone_number}</p>
+                </div>
               </NavLink>
             </div>
            </>
@@ -25,7 +29,6 @@ function List() {
       </div>
       
        <Switch>
-         {/* <Redirect to={`${url}/:id`} /> */}
           <Route path={`${url}/:id`} children={<Detail />} />
         </Switch>
       
@@ -36,8 +39,14 @@ function List() {
 
 const customerList = {
   "customers" : [
-    {"id": 55, "name" : "홍*동", "phone_number" : "010-****-4567"},
-    {"id": 59, "name" : "김*훈", "phone_number" : "010-****-8484"},
+    {"id": 1, "name" : "김*훈", "phone_number" : "010-****-1234"},
+    {"id": 2, "name" : "박*수", "phone_number" : "010-****-4567"},
+    {"id": 3, "name" : "이*훈", "phone_number" : "010-****-8901"},
+    {"id": 4, "name" : "박*지", "phone_number" : "010-****-2345"},
+    {"id": 5, "name" : "정*훈", "phone_number" : "010-****-6789"},
+    {"id": 6, "name" : "김*진", "phone_number" : "010-****-0123"},
+    {"id": 7, "name" : "김*호", "phone_number" : "010-****-4567"},
+    {"id": 8, "name" : "최*지", "phone_number" : "010-****-8901"},
   ]
 }
 
