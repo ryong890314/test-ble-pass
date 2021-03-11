@@ -5,6 +5,8 @@ import { Route, Switch, useRouteMatch, NavLink } from "react-router-dom";
 function List() {
 
   let { url } = useRouteMatch();  
+
+  console.log(url);
   
   return (
     <>
@@ -28,7 +30,7 @@ function List() {
 
       </div>
       
-       <Switch>
+        <Switch>
           <Route path={`${url}/:id`} children={<Detail />} />
         </Switch>
       

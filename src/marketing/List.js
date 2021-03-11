@@ -1,9 +1,10 @@
 import { Route, Switch, useRouteMatch, NavLink } from "react-router-dom";
-  // import Detail from './Detail';
+import Detail from './Detail';
 
 function List() {
 
-  let { url } = useRouteMatch();  
+  let { url } = useRouteMatch();
+  
   
   return (
     <>
@@ -19,25 +20,30 @@ function List() {
                   <p className="stat_text">{marketing.title}</p>
                 </div>
                 <div className="marketing_info">
-                  <div className="stat">
-                    <div className="stat_title">등록날짜</div>
-                    <div className="stat_text">{marketing.date}</div>
+                  <div className="info_box_left">
+                    <div className="stat">
+                      <div className="stat_title">등록날짜</div>
+                      <div className="stat_text">{marketing.date}</div>
+                    </div>
+                    <div className="stat">
+                      <p className="stat_title">전송</p>
+                      <p className="stat_text">{marketing.send}</p>
+                    </div>
+                    <div className="stat">
+                      <p className="stat_title">조회</p>
+                      <p className="stat_text">{marketing.read}</p>
+                    </div>
+                    <div className="stat">
+                      <p className="stat_title">클릭</p>
+                      <p className="stat_text">{marketing.click}</p>
+                    </div>
                   </div>
-                  <div className="stat">
-                    <p className="stat_title">전송</p>
-                    <p className="stat_text">{marketing.send}</p>
+                  <div className="info_box_right">
+                    <div className="goal">
+                      <p className="stat_title">목표달성</p>
+                      <p className="stat_text">{marketing.goal}</p>
+                    </div>
                   </div>
-                  <div className="stat">
-                    <p className="stat_title">조회</p>
-                    <p className="stat_text">{marketing.read}</p>
-                  </div>
-                  <div className="stat">
-                    <p className="stat_title">클릭</p>
-                    <p className="stat_text">{marketing.click}</p>
-                  </div>
-                  
-                  <p className="stat_title">목표달성</p>
-                  <p className="stat_text">{marketing.goal}</p>
                 </div>
               </NavLink>
             </div>
@@ -48,8 +54,7 @@ function List() {
       </div>
       
        <Switch>
-          {/* <Route path={`${url}/:id`} children={<Detail />} /> */}
-          <Route path={`${url}/:id`} />
+          <Route path={`${url}/:id`} children={<Detail />}/>
         </Switch>
       
     </>

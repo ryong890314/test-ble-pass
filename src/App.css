@@ -237,6 +237,9 @@ ul {
   font-weight: 800;
   padding-bottom: 15px;
 }
+.layout_1 .title.bottom {
+  padding-bottom: 5px;
+}
 .layout_1 .sub_title {
   font-size: 12px;
   padding-bottom: 15px;
@@ -246,11 +249,15 @@ ul {
   align-items: center;
   padding-bottom: 15px;
 }
+.layout_1 .customer_info.bottom {
+  padding-bottom: 0;
+}
 .layout_1 .customer_info .profile_img {
   display: inline-flex;
 }
 .layout_1 .customer_info .profile_info {
   flex-direction: column;
+  text-align: left;
   margin-left: 10px;
 }
 .layout_1 .customer_info .name{
@@ -262,6 +269,13 @@ ul {
 .layout_1 .customer_info .phone_number{
   font-size: 14px;
   color: #a6a6a6;
+}
+.layout_1 .customer_info .name.small{
+  color: #000;
+  font-size: 14px;
+}
+.layout_1 .customer_info .phone_number.small{
+  font-size: 12px;
 }
 .layout_1 table {
   width: 100%;
@@ -284,7 +298,12 @@ ul {
 .layout_1 td {
   font-size: 14px;
 }
-
+.layout_1 .td_small {
+  font-size: 12px;
+}
+.layout_1 .profile_img_small {
+  height: 30px;
+}
 .layout_header {
   display: flex;
   flex-direction: column;
@@ -431,7 +450,10 @@ ul {
   font-size: 18px;
   font-weight: 800;
 }
-
+.List .marketing_list .marketing_info {
+  display: flex;
+  justify-content: space-between;
+}
 .List .marketing_list .marketing_info .stat {
   display: flex;
   flex-direction: row;
@@ -444,7 +466,15 @@ ul {
 }
 .List .marketing_list .marketing_info .stat_text {
   width: 100px;
+  font-size: 14px;
   font-weight: 800;
+}
+.List .marketing_list .marketing_info .goal {
+  text-align: right;
+}
+.List .marketing_list .marketing_info .goal .stat_text {
+  font-size: 18px;
+  color: #2B90D9;
 }
 .Detail {
   display: flex;
@@ -452,5 +482,8 @@ ul {
   flex-direction: column;
   overflow: auto;
   overflow-y:scroll;
+}
+.Detail.wide {
+  width: calc(100% - 400px);
 }
 

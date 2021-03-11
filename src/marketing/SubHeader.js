@@ -61,7 +61,7 @@ function SubHeader() {
 
     </div>
 
-    <div className="MainPage">
+    <div className="MainPage flex_container">
       <Switch>
         <Route exact path={path}>
           <Redirect to={`${path}/total`} />
