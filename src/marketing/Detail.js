@@ -1,4 +1,3 @@
-import { Bar } from 'react-chartjs-2';
 import { useParams } from "react-router-dom";
 import profile_img from '../images/profile_img.png';
 

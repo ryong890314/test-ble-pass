@@ -1,4 +1,4 @@
-import { Route, Switch, useRouteMatch, NavLink } from "react-router-dom";
+import { Route, Switch, useRouteMatch, NavLink, Redirect } from "react-router-dom";
   import Detail from './Detail';
   import profile_img from '../images/profile_img.png';
 
@@ -6,8 +6,8 @@ function List() {
 
   let { url } = useRouteMatch();  
 
-  console.log(url);
-  
+  let default_id = customerList.customers[0].id;
+
   return (
     <>
       <div className="List">
@@ -31,6 +31,9 @@ function List() {
       </div>
       
         <Switch>
+          <Route exact path={url}>
+            <Redirect to={`${url}/${default_id}`} />
+          </Route>
           <Route path={`${url}/:id`} children={<Detail />} />
         </Switch>
       

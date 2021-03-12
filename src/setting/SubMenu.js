@@ -1,7 +1,7 @@
 import { Route, Switch, 
   useRouteMatch, NavLink, Redirect } from "react-router-dom";
 
-import TotalPage from './TotalPage';
+import PushPage from './PushPage';
 import Header from './Header';
 
 function SubMenu() {
@@ -51,7 +51,25 @@ function SubMenu() {
             <Redirect to={`${path}/push`} />
           </Route>
           <Route path={`${path}/push`}>
-            <TotalPage />
+            <PushPage />
+          </Route>
+          <Route path={`${path}/time`}>
+            <PushPage />
+          </Route>
+          <Route path={`${path}/account`}>
+            <PushPage />
+          </Route>
+          <Route path={`${path}/etc`}>
+            <PushPage />
+          </Route>
+          <Route path={`${path}/version`}>
+            <PushPage />
+          </Route>
+          <Route path={`${path}/logout`}>
+            <PushPage />
+          </Route>
+          <Route path={`${path}/delete`}>
+            <PushPage />
           </Route>
           
         </Switch>

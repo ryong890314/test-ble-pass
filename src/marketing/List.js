@@ -1,11 +1,12 @@
-import { Route, Switch, useRouteMatch, NavLink } from "react-router-dom";
+import { Route, Switch, useRouteMatch, NavLink, Redirect } from "react-router-dom";
 import Detail from './Detail';
 
 function List() {
 
   let { url } = useRouteMatch();
-  
-  
+
+  let default_id = marketingList.marketings[0].id;
+
   return (
     <>
       <div className="List card">
@@ -54,6 +55,9 @@ function List() {
       </div>
       
        <Switch>
+          <Route exact path={url}>
+            <Redirect to={`${url}/${default_id}`} />
+          </Route>
           <Route path={`${url}/:id`} children={<Detail />}/>
         </Switch>
       

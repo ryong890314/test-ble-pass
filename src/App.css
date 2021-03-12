@@ -304,6 +304,33 @@ ul {
 .layout_1 .profile_img_small {
   height: 30px;
 }
+.layout_1 .option_box #option_id_3,
+.layout_1 .option_box #option_id_2,
+.layout_1 .option_box #option_id_1 {
+  display: none;
+}
+.layout_1 .option_box input[id="option_id_3"] + label,
+.layout_1 .option_box input[id="option_id_2"] + label,
+.layout_1 .option_box input[id="option_id_1"] + label {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+  border-radius: 2px;
+	border: 1px solid #bcbcbc;
+  background-color: #eaeaea;
+	cursor: pointer;
+}
+.layout_1 .option_box input[id="option_id_3"]:checked + label,
+.layout_1 .option_box input[id="option_id_2"]:checked + label,
+.layout_1 .option_box input[id="option_id_1"]:checked + label {
+  background-color: #D5E9F7;
+}
+.layout_1 .option_box {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px;
+}
 .layout_header {
   display: flex;
   flex-direction: column;
