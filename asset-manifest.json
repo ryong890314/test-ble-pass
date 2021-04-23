@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/test-ble-pass/static/css/main.7fa94e10.chunk.css",
+    "main.css": "/test-ble-pass/static/css/main.5dfb4c70.chunk.css",
     "main.js": "/test-ble-pass/static/js/main.a4842c99.chunk.js",
     "main.js.map": "/test-ble-pass/static/js/main.a4842c99.chunk.js.map",
     "runtime-main.js": "/test-ble-pass/static/js/runtime-main.90123c79.js",
@@ -10,13 +10,13 @@
     "static/js/3.12ae1cc4.chunk.js": "/test-ble-pass/static/js/3.12ae1cc4.chunk.js",
     "static/js/3.12ae1cc4.chunk.js.map": "/test-ble-pass/static/js/3.12ae1cc4.chunk.js.map",
     "index.html": "/test-ble-pass/index.html",
-    "static/css/main.7fa94e10.chunk.css.map": "/test-ble-pass/static/css/main.7fa94e10.chunk.css.map",
+    "static/css/main.5dfb4c70.chunk.css.map": "/test-ble-pass/static/css/main.5dfb4c70.chunk.css.map",
     "static/js/2.96b1154e.chunk.js.LICENSE.txt": "/test-ble-pass/static/js/2.96b1154e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.90123c79.js",
     "static/js/2.96b1154e.chunk.js",
-    "static/css/main.7fa94e10.chunk.css",
+    "static/css/main.5dfb4c70.chunk.css",
     "static/js/main.a4842c99.chunk.js"
   ]
 }
